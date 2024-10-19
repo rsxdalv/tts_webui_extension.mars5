@@ -20,6 +20,25 @@ from tts_webui.utils.manage_model_state import manage_model_state
 from tts_webui.utils.randomize_seed import randomize_seed_ui
 
 
+def extension__tts_generation_webui():
+    ui()
+    return {
+        "package_name": "extension_mars5",
+        "name": "MARS5",
+        "version": "0.0.2",
+        "requirements": "git+https://github.com/rsxdalv/extension_mars5@main",
+        "description": "MARS5: A novel speech model for insane prosody",
+        "extension_type": "interface",
+        "extension_class": "text-to-speech",
+        "author": "CAMB.AI",
+        "extension_author": "rsxdalv",
+        "license": "MIT",
+        "website": "https://github.com/camb-ai/mars5-tts",
+        "extension_website": "https://github.com/rsxdalv/extension_mars5",
+        "extension_platform_version": "0.0.1",
+    }
+
+
 @manage_model_state("mars5")
 def get_mars5(model_name="CAMB-AI/MARS5-TTS"):
     from mars5.inference import Mars5TTS
