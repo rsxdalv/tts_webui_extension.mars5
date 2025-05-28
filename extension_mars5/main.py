@@ -25,7 +25,6 @@ def extension__tts_generation_webui():
     return {
         "package_name": "extension_mars5",
         "name": "MARS5",
-        "version": "0.0.2",
         "requirements": "git+https://github.com/rsxdalv/extension_mars5@main",
         "description": "MARS5: A novel speech model for insane prosody",
         "extension_type": "interface",
