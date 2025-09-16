@@ -2,12 +2,12 @@
 import setuptools
 
 setuptools.setup(
-	name="extension_mars5",
+	name="tts_webui_extension.mars5",
     packages=setuptools.find_namespace_packages(),
 	version="0.0.2",
 	author="rsxdalv",
 	description="MARS5: A novel speech model for insane prosody",
-	url="https://github.com/rsxdalv/extension_mars5",
+	url="https://github.com/rsxdalv/tts_webui_extension.mars5",
     project_urls={},
     scripts=[],
     install_requires=[
@@ -19,3 +19,4 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
 )
+
