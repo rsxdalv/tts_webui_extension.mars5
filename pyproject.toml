@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "tts_webui_extension.mars5"
-version = "0.0.2"
+version = "0.0.3"
 description = "MARS5: A novel speech model for insane prosody"
 authors = [
     {name = "rsxdalv"}
@@ -17,6 +17,7 @@ classifiers = [
 ]
 dependencies = [
     "mars5 @ git+https://github.com/rsxdalv/mars5-tts@master",
+    "numpy==1.26.4",
 ]
 
 [project.urls]

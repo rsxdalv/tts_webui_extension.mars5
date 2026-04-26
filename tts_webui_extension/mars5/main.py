@@ -84,7 +84,7 @@ def ui():
             temperature = gr.Slider(
                 label="Temperature", value=0.7, step=0.05, minimum=0.0, maximum=1.0
             )
-            top_k = gr.Slider(label="Top-k", value=200, step=1, minimum=0)
+            top_k = gr.Slider(label="Top-k", value=200, step=1, minimum=0, maximum=500)
             top_p = gr.Slider(
                 label="Top-p", value=0.2, step=0.05, minimum=0.0, maximum=1.0
             )
@@ -119,7 +119,7 @@ def ui():
                 eos_estimated_gen_length_factor = gr.Slider(
                     label="EOS Estimated Gen Length Factor", value=1.0
                 )
-                timesteps = gr.Slider(label="Timesteps", value=200)
+                timesteps = gr.Slider(label="Timesteps", value=200, maximum=250)
                 x_0_temp = gr.Slider(
                     label="X0 Temperature",
                     value=0.7,
@@ -131,7 +131,7 @@ def ui():
                 nar_guidance_w = gr.Slider(label="NAR Guidance W", value=3)
                 max_prompt_dur = gr.Slider(label="Max Prompt Duration", value=12)
                 generate_max_len_override = gr.Slider(
-                    label="Generate Max Len Override", value=-1
+                    label="Generate Max Len Override", value=-1, minimum=-1
                 )
                 trim_db = gr.Slider(label="Trim DB", value=27)
                 beam_width = gr.Slider(label="Beam Width", value=1)
